@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Western Shooter</title>
+    <title>Unity WebGL Player | FPS_BodyCam</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Western Shooter</div>
+        <div id="unity-build-title">FPS_BodyCam</div>
       </div>
     </div>
     <script>
@@ -57,15 +57,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js";
+      var loaderUrl = buildUrl + "/Bodycam_05.loader.js";
       var config = {
-        dataUrl: buildUrl + "/0bb9a9a6e0d197ebf25b42a2df91a357.data",
-        frameworkUrl: buildUrl + "/23a445072ab15ace140ea578fcb70ac8.framework.js",
-        codeUrl: buildUrl + "/4860dd31b4dc7262deac3052d684b914.wasm",
+        dataUrl: buildUrl + "/Bodycam_05.data",
+        frameworkUrl: buildUrl + "/Bodycam_05.framework.js",
+        codeUrl: buildUrl + "/Bodycam_05.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "fireflour",
-        productName: "Western Shooter",
-        productVersion: "1.092",
+        companyName: "DefaultCompany",
+        productName: "FPS_BodyCam",
+        productVersion: "4.0.0",
         showBanner: unityShowBanner,
       };
 
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
